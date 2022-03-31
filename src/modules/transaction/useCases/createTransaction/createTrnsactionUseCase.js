@@ -15,9 +15,12 @@ class CreateTransactionUseCase{
             date: date
 
         }
-        
-        const create = await Model.create(input)
 
+        
+        
+        const create = await Model.create(input).then((res)=>{return res }).catch((err)=>{const error={error:err._message}; return error })
+        
+        
         return create
     }
    
