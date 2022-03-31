@@ -1,14 +1,18 @@
 const express = require('express');
+const routes = require('./routes')
 const cors = require('cors');
 const connection = require('../infra/mongoose/index.js')
+const Model = require('../../modules/transaction/models/transactionModel')
 
 connection.createConnection()
 
-
+console.log(Model)
 const app = express()
 
 app.use(cors());
 app.use(express.json());
+
+app.use(routes)
 
 app.get('/teste', (req, res, next) => {
     console.log("teste")
