@@ -1,0 +1,20 @@
+{
+  "name": "be-projetofacul",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<juan_ormelli@hotmail.com>",
+  "license": "MIT",
+ 
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.2.9"
+  },
+  "scripts": {
+    "dev": "node-dev src/shared/http/app.js"
+  },
+  "devDependencies": {
+    "node-dev": "^7.4.2"
+  }
+}
