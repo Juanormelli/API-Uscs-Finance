@@ -6,7 +6,7 @@ class CreateTransactionUseCase{
 
     };
     async execute(title, value, typeOfTransaction, description, date ){
-        console.log(title, value, typeOfTransaction, description, date)
+        
         const input = {
             title: title,
             value: value,

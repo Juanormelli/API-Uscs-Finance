@@ -6,7 +6,7 @@ const TransactionSchema = new mongoose.Schema({
     value:{type:Number, required:true, defaultValue:0},
     transactionType:{type:String, required:true, defaultValue:"deposit"},
     description:{type:String, required:true},
-    date:{type:Number, required:true}
+    date:{type:String, required:true}
 
 
 })

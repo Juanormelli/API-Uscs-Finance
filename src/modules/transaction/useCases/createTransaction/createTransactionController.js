@@ -8,6 +8,8 @@ class CreateTransactionController{
         
         const {title, value, typeOfTransaction, description, date }= req.body;
 
+        console.log(req.body)
+
         const result = await createTransactionUseCase.execute(title, value, typeOfTransaction, description, date)
 
         if (result.error) {
